@@ -24,6 +24,8 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
+        with:
+          node-version: lts/* # npm v11.5.1+ (Node v24+) is required for Trusted Publishing
 
       - name: Install and Build
         run: |
